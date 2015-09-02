@@ -27,34 +27,77 @@ html {
     }
 }
 
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-of those sections to manage the look and feel of the site. */
+/** www.atog.nl */
+
+/** algemeen */
+
+
+.container p, ul.section li {
+	font-family:Garamond, Georgia, serif;
+	font-size: 1.6em;
+	line-height: 1.42857143;
+	color: #333;
+}
+
+h1, h2, h3 { color: #222; font-weight: bold; }
+
+.intro-section h1 {
+	background-color:rgba(255,255,255,0.6);
+	display:inline-block;
+	padding: 0.25em;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.intro-section p {
+	background-color:rgba(255,255,255,0.6);
+	display:inline-block;
+	padding: 0.25em 0.1em;
+}
+
+/** nav */
+
+ul.nav {
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+/** sections */
+
+.intro-section,
+.doel-section,
+.bestuur-section,
+.beleid-section,
+.verslag-section,
+.contact-section {
+	min-height: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    /* text-align: center; */
+}
+
 
 .intro-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
+    
+    background-image:  url(../img/podg.jpg);
+    background-size:   cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.beleid-section {
     background: #fff;
 }
 
-.about-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
+.bestuur-section {
     background: #eee;
 }
 
-.services-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
+.verslag-section {
     background: #fff;
 }
 
 .contact-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
     background: #eee;
 }
